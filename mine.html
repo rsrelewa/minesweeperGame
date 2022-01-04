@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            .container{
+                display:grid;
+                grid-template-columns: repeat(10,1fr);
+                grid-template-rows: repeat(10,1fr);
+                column-gap: 0px;
+                width: 400px;
+                height:400px;
+                
+            }
+
+            .cell{
+                display:grid;
+                border:solid;
+                border-color: rgba(0, 0, 0, 0.527);
+                border-width: 1px;
+                width:40px;
+                height:40px;
+                background-color: rgb(90, 143, 207);
+            }
+
+            .cell:hover{
+                background-color: rgb(50, 119, 204);
+                cursor: pointer;
+            }
+
+            .flagged {
+                background-color: rgb(184, 184, 42) !important;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container"></div>
+        <br><br>
+        <button class="cheat">Only press if you like to cheat</button>
+        <ul>
+            <li>Right click to flag</li>
+        </ul>
+        <script src="mine.js"></script>
+    </body>
+    </html>
